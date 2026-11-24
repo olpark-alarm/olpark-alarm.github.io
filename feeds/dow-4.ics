@@ -1,138 +1,138 @@
-BEGIN:VCALENDAR
-VERSION:2.0
-PRODID:-//olpark-event-alert//KO
-CALSCALE:GREGORIAN
-METHOD:PUBLISH
-X-WR-CALNAME:올팍 공연일 · 목요일
-X-WR-TIMEZONE:Asia/Seoul
-REFRESH-INTERVAL;VALUE=DURATION:PT12H
-X-PUBLISHED-TTL:PT12H
-BEGIN:VEVENT
-UID:olpark-20261203@olpark-event-alert
-DTSTAMP:20261124T135516Z
-DTSTART;VALUE=DATE:20261203
-DTEND;VALUE=DATE:20261204
-SUMMARY:올팍 공연일: 최현우 30주년 기념 공연 - LEGACY
-DESCRIPTION:· 최현우 30주년 기념 공연 - LEGACY (올림픽공원
-  우리금융아트홀\, 수목금 19시 30분 / 토 15시\, 19시 / 일 
- 14시 (일자별 공연 시간 변동 있으며\, 상세페이지 참고 
- 부탁드립니다. ))\n소규모·장기 공연: 주차 영향 분석 
- 제외\n대중교통: 5·9호선 올림픽공원역\n예상 이용률: ht
- tps://www.ksponco.or.kr/online/main/parking.do\nhttps://olpark-alarm.gith
- ub.io/
-TRANSP:TRANSPARENT
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:내일 올림픽공원 공연일
-TRIGGER:-PT6H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:olpark-20261210@olpark-event-alert
-DTSTAMP:20261124T135516Z
-DTSTART;VALUE=DATE:20261210
-DTEND;VALUE=DATE:20261211
-SUMMARY:올팍 공연일: 최현우 30주년 기념 공연 - LEGACY
-DESCRIPTION:· 최현우 30주년 기념 공연 - LEGACY (올림픽공원
-  우리금융아트홀\, 수목금 19시 30분 / 토 15시\, 19시 / 일 
- 14시 (일자별 공연 시간 변동 있으며\, 상세페이지 참고 
- 부탁드립니다. ))\n소규모·장기 공연: 주차 영향 분석 
- 제외\n대중교통: 5·9호선 올림픽공원역\n예상 이용률: ht
- tps://www.ksponco.or.kr/online/main/parking.do\nhttps://olpark-alarm.gith
- ub.io/
-TRANSP:TRANSPARENT
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:내일 올림픽공원 공연일
-TRIGGER:-PT6H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:olpark-20261217@olpark-event-alert
-DTSTAMP:20261124T135516Z
-DTSTART;VALUE=DATE:20261217
-DTEND;VALUE=DATE:20261218
-SUMMARY:올팍 공연일: 최현우 30주년 기념 공연 - LEGACY
-DESCRIPTION:· 최현우 30주년 기념 공연 - LEGACY (올림픽공원
-  우리금융아트홀\, 수목금 19시 30분 / 토 15시\, 19시 / 일 
- 14시 (일자별 공연 시간 변동 있으며\, 상세페이지 참고 
- 부탁드립니다. ))\n소규모·장기 공연: 주차 영향 분석 
- 제외\n대중교통: 5·9호선 올림픽공원역\n예상 이용률: ht
- tps://www.ksponco.or.kr/online/main/parking.do\nhttps://olpark-alarm.gith
- ub.io/
-TRANSP:TRANSPARENT
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:내일 올림픽공원 공연일
-TRIGGER:-PT6H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:olpark-20261224@olpark-event-alert
-DTSTAMP:20261124T135516Z
-DTSTART;VALUE=DATE:20261224
-DTEND;VALUE=DATE:20261225
-SUMMARY:올팍 공연일 18:00~23:00: 2026 박진영 콘서트 〈WET〉 
- 외 2건
-DESCRIPTION:· 2026 박진영 콘서트 〈WET〉 (올림픽홀\, 12.24(
- 목) 8PM 12.25(금) 5PM 12.26(토) 6PM)\n· 2026 THE BOYZ CONCERT : ZENER
- ATION III (KSPO DOME\, 목 오후 7시 30분 / 금 오후 6시 / 토 오
- 후 5시 / 일 오후 4시)\n· 최현우 30주년 기념 공연 - LEGACY
-  (올림픽공원 우리금융아트홀\, 수목금 19시 30분 / 토 15
- 시\, 19시 / 일 14시 (일자별 공연 시간 변동 있으며\, 상
- 세페이지 참고 부탁드립니다. ))\n주차 증가 참고 시간
- 대 18:00~23:00 (2025년 KSPO DOME 공연일 19일 기준\, 21시 평소
- 의 1.83배)\n대중교통: 5·9호선 올림픽공원역\n예상 이용
- 률: https://www.ksponco.or.kr/online/main/parking.do\nhttps://olpark-ala
- rm.github.io/
-TRANSP:TRANSPARENT
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:내일 올림픽공원 공연일
-TRIGGER:-PT6H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:olpark-20261231@olpark-event-alert
-DTSTAMP:20261124T135516Z
-DTSTART;VALUE=DATE:20261231
-DTEND;VALUE=DATE:20270101
-SUMMARY:올팍 공연일 18:00~23:00: 2026 성시경 연말 콘서트 〈
- 성시경〉 외 1건
-DESCRIPTION:· 2026 성시경 연말 콘서트 〈성시경〉 (KSPO DOME
- \, 2026년 12월 31일(목) 9:00:00PM(KST) 2027년 1월 1일(금) 07:00:0
- 0PM(KST) 2027년 1월 2일(토) 06:00:00PM(KST) 2027년 1월 3일(일)06:
- 00:00PM(KST))\n· 최현우 30주년 기념 공연 - LEGACY (올림픽공
- 원 우리금융아트홀\, 수목금 19시 30분 / 토 15시\, 19시 / 
- 일 14시 (일자별 공연 시간 변동 있으며\, 상세페이지 참
- 고 부탁드립니다. ))\n주차 증가 참고 시간대 18:00~23:00 (2
- 025년 KSPO DOME 공연일 19일 기준\, 21시 평소의 1.83배)\n대
- 중교통: 5·9호선 올림픽공원역\n예상 이용률: https://www.k
- sponco.or.kr/online/main/parking.do\nhttps://olpark-alarm.github.io/
-TRANSP:TRANSPARENT
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:내일 올림픽공원 공연일
-TRIGGER:-PT6H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:olpark-20270204@olpark-event-alert
-DTSTAMP:20261124T135516Z
-DTSTART;VALUE=DATE:20270204
-DTEND;VALUE=DATE:20270205
-SUMMARY:올팍 공연일 18:00~23:00: 캣츠아이 첫 단독 내한공
- 연
-DESCRIPTION:· 캣츠아이 첫 단독 내한공연 (KSPO DOME)\n주차 
- 증가 참고 시간대 18:00~23:00 (2025년 KSPO DOME 공연일 19일 
- 기준\, 21시 평소의 1.83배)\n대중교통: 5·9호선 올림픽공
- 원역\n예상 이용률: https://www.ksponco.or.kr/online/main/parking.d
- o\nhttps://olpark-alarm.github.io/
-TRANSP:TRANSPARENT
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:내일 올림픽공원 공연일
-TRIGGER:-PT6H
-END:VALARM
-END:VEVENT
-END:VCALENDAR
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//olpark-event-alert//KO
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:올팍 공연일 · 목요일
+X-WR-TIMEZONE:Asia/Seoul
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VEVENT
+UID:olpark-20261203@olpark-event-alert
+DTSTAMP:20261124T141017Z
+DTSTART;VALUE=DATE:20261203
+DTEND;VALUE=DATE:20261204
+SUMMARY:올팍 공연일: 최현우 30주년 기념 공연 - LEGACY
+DESCRIPTION:· 최현우 30주년 기념 공연 - LEGACY (올림픽공원
+  우리금융아트홀\, 수목금 19시 30분 / 토 15시\, 19시 / 일 
+ 14시 (일자별 공연 시간 변동 있으며\, 상세페이지 참고 
+ 부탁드립니다. ))\n소규모·장기 공연: 주차 영향 분석 
+ 제외\n대중교통: 5·9호선 올림픽공원역\n예상 이용률: ht
+ tps://www.ksponco.or.kr/online/main/parking.do\nhttps://olpark-alarm.gith
+ ub.io/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:내일 올림픽공원 공연일
+TRIGGER:-PT6H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:olpark-20261210@olpark-event-alert
+DTSTAMP:20261124T141017Z
+DTSTART;VALUE=DATE:20261210
+DTEND;VALUE=DATE:20261211
+SUMMARY:올팍 공연일: 최현우 30주년 기념 공연 - LEGACY
+DESCRIPTION:· 최현우 30주년 기념 공연 - LEGACY (올림픽공원
+  우리금융아트홀\, 수목금 19시 30분 / 토 15시\, 19시 / 일 
+ 14시 (일자별 공연 시간 변동 있으며\, 상세페이지 참고 
+ 부탁드립니다. ))\n소규모·장기 공연: 주차 영향 분석 
+ 제외\n대중교통: 5·9호선 올림픽공원역\n예상 이용률: ht
+ tps://www.ksponco.or.kr/online/main/parking.do\nhttps://olpark-alarm.gith
+ ub.io/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:내일 올림픽공원 공연일
+TRIGGER:-PT6H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:olpark-20261217@olpark-event-alert
+DTSTAMP:20261124T141017Z
+DTSTART;VALUE=DATE:20261217
+DTEND;VALUE=DATE:20261218
+SUMMARY:올팍 공연일: 최현우 30주년 기념 공연 - LEGACY
+DESCRIPTION:· 최현우 30주년 기념 공연 - LEGACY (올림픽공원
+  우리금융아트홀\, 수목금 19시 30분 / 토 15시\, 19시 / 일 
+ 14시 (일자별 공연 시간 변동 있으며\, 상세페이지 참고 
+ 부탁드립니다. ))\n소규모·장기 공연: 주차 영향 분석 
+ 제외\n대중교통: 5·9호선 올림픽공원역\n예상 이용률: ht
+ tps://www.ksponco.or.kr/online/main/parking.do\nhttps://olpark-alarm.gith
+ ub.io/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:내일 올림픽공원 공연일
+TRIGGER:-PT6H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:olpark-20261224@olpark-event-alert
+DTSTAMP:20261124T141017Z
+DTSTART;VALUE=DATE:20261224
+DTEND;VALUE=DATE:20261225
+SUMMARY:올팍 공연일 18:00~23:00: 2026 박진영 콘서트 〈WET〉 
+ 외 2건
+DESCRIPTION:· 2026 박진영 콘서트 〈WET〉 (올림픽홀\, 12.24(
+ 목) 8PM 12.25(금) 5PM 12.26(토) 6PM)\n· 2026 THE BOYZ CONCERT : ZENER
+ ATION III (KSPO DOME\, 목 오후 7시 30분 / 금 오후 6시 / 토 오
+ 후 5시 / 일 오후 4시)\n· 최현우 30주년 기념 공연 - LEGACY
+  (올림픽공원 우리금융아트홀\, 수목금 19시 30분 / 토 15
+ 시\, 19시 / 일 14시 (일자별 공연 시간 변동 있으며\, 상
+ 세페이지 참고 부탁드립니다. ))\n주차 증가 참고 시간
+ 대 18:00~23:00 (2025년 KSPO DOME 공연일 19일 기준\, 21시 평소
+ 의 1.83배)\n대중교통: 5·9호선 올림픽공원역\n예상 이용
+ 률: https://www.ksponco.or.kr/online/main/parking.do\nhttps://olpark-ala
+ rm.github.io/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:내일 올림픽공원 공연일
+TRIGGER:-PT6H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:olpark-20261231@olpark-event-alert
+DTSTAMP:20261124T141017Z
+DTSTART;VALUE=DATE:20261231
+DTEND;VALUE=DATE:20270101
+SUMMARY:올팍 공연일 18:00~23:00: 2026 성시경 연말 콘서트 〈
+ 성시경〉 외 1건
+DESCRIPTION:· 2026 성시경 연말 콘서트 〈성시경〉 (KSPO DOME
+ \, 2026년 12월 31일(목) 9:00:00PM(KST) 2027년 1월 1일(금) 07:00:0
+ 0PM(KST) 2027년 1월 2일(토) 06:00:00PM(KST) 2027년 1월 3일(일)06:
+ 00:00PM(KST))\n· 최현우 30주년 기념 공연 - LEGACY (올림픽공
+ 원 우리금융아트홀\, 수목금 19시 30분 / 토 15시\, 19시 / 
+ 일 14시 (일자별 공연 시간 변동 있으며\, 상세페이지 참
+ 고 부탁드립니다. ))\n주차 증가 참고 시간대 18:00~23:00 (2
+ 025년 KSPO DOME 공연일 19일 기준\, 21시 평소의 1.83배)\n대
+ 중교통: 5·9호선 올림픽공원역\n예상 이용률: https://www.k
+ sponco.or.kr/online/main/parking.do\nhttps://olpark-alarm.github.io/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:내일 올림픽공원 공연일
+TRIGGER:-PT6H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:olpark-20270204@olpark-event-alert
+DTSTAMP:20261124T141017Z
+DTSTART;VALUE=DATE:20270204
+DTEND;VALUE=DATE:20270205
+SUMMARY:올팍 공연일 18:00~23:00: 캣츠아이 첫 단독 내한공
+ 연
+DESCRIPTION:· 캣츠아이 첫 단독 내한공연 (KSPO DOME)\n주차 
+ 증가 참고 시간대 18:00~23:00 (2025년 KSPO DOME 공연일 19일 
+ 기준\, 21시 평소의 1.83배)\n대중교통: 5·9호선 올림픽공
+ 원역\n예상 이용률: https://www.ksponco.or.kr/online/main/parking.d
+ o\nhttps://olpark-alarm.github.io/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:내일 올림픽공원 공연일
+TRIGGER:-PT6H
+END:VALARM
+END:VEVENT
+END:VCALENDAR
