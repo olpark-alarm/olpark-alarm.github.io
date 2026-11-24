@@ -1,0 +1,32 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//olpark-event-alert//KO
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:올팍 공연일 · 월요일
+X-WR-TIMEZONE:Asia/Seoul
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VEVENT
+UID:olpark-20270208@olpark-event-alert
+DTSTAMP:20261124T135516Z
+DTSTART;VALUE=DATE:20270208
+DTEND;VALUE=DATE:20270209
+SUMMARY:올팍 공연일: 뮤지컬 〈사랑의 하츄핑: 고래보석
+ 의 전설〉
+DESCRIPTION:· 뮤지컬 〈사랑의 하츄핑: 고래보석의 전설
+ 〉 (우리금융아트홀\, 화\, 수\, 목\, 금\, 일 11시\, 14시 / 
+ 토 11시\, 14시\, 16시30분(월 공연없음) / 1월 9일 14시\, 16
+ 시 30분 / 1월 10일 11시\, 14시\, 16시 30분 / 2월 7일 14시\, 16
+ 시30분 / 2월 8일 11시\, 14시\, 16시30분 / 2월 9일 11시\, 14시
+ )\n소규모·장기 공연: 주차 영향 분석 제외\n대중교통: 5
+ ·9호선 올림픽공원역\n예상 이용률: https://www.ksponco.or.kr
+ /online/main/parking.do\nhttps://olpark-alarm.github.io/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:내일 올림픽공원 공연일
+TRIGGER:-PT6H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

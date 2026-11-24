@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>올팍 공연일 알림</title>
+<meta name="description" content="올림픽공원 공연·행사일이 내 운동·산책 시간과 겹치는지 미리 알려 주는 달력. 한국체육산업개발(주) 공공데이터 활용.">
+<meta name="color-scheme" content="light dark">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="style.css">
+<script>
+  // 저장된 화면 밝기를 첫 그림 전에 적용(깜빡임 방지)
+  try { var t = localStorage.getItem("olpark-theme"); if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t); } catch (e) {}
+</script>
+</head>
+<body>
+<a class="skip" href="#cal">달력으로 바로 가기</a>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="masthead-row">
+      <h1>올팍 공연일 알림</h1>
+      <button type="button" class="theme" id="theme" aria-label="화면 밝기 바꾸기">화면 자동</button>
+    </div>
+    <p class="lede">매주 같은 시간에 수영·테니스·산책을 오는 분을 위한 달력입니다. 올림픽공원 공연은 같은 주차장을 씁니다. 내 이용 요일·시간을 한 번 정해 두면, 그중 공연 때문에 주차가 붐비는 날을 달력에 미리 표시하고, 이용 요일의 공연일을 휴대폰 캘린더로 받아 볼 수 있습니다.</p>
+  </div>
+</header>
+
+<main class="wrap">
+  <p id="dataNotice" class="notice" role="status" hidden></p>
+
+  <section class="prefs-band" id="sec-me" aria-labelledby="h-me">
+    <h2 id="h-me">내 이용 시간</h2>
+    <form id="prefs" class="prefs" autocomplete="off">
+      <label class="field f-fac">
+        <span class="lab">이용하는 곳</span>
+        <select id="facility"></select>
+      </label>
+      <fieldset class="field f-days">
+        <legend class="lab">요일</legend>
+        <div class="days" id="days"></div>
+      </fieldset>
+      <div class="field f-time">
+        <span class="lab" id="lab-time">시간</span>
+        <div class="time-pair" role="group" aria-labelledby="lab-time">
+          <select id="tFrom" aria-label="시작 시각"></select>
+          <span aria-hidden="true">부터</span>
+          <select id="tTo" aria-label="끝 시각"></select>
+          <span aria-hidden="true">까지</span>
+        </div>
+      </div>
+      <fieldset class="field f-mode">
+        <legend class="lab">오는 방법</legend>
+        <div class="mode">
+          <label><input type="radio" name="mode" value="car" checked> 자가용</label>
+          <label><input type="radio" name="mode" value="transit"> 대중교통·도보</label>
+        </div>
+      </fieldset>
+    </form>
+    <p class="summary" id="mySummary" aria-live="polite"></p>
+    <p class="aux"><button type="button" class="textbtn" id="copyMine">이 설정 링크 복사</button> <span id="mineCopied" aria-live="polite"></span><br>링크에는 고른 시설·요일·시간·오는 방법이 담깁니다. 설정은 이 브라우저에만 저장됩니다.</p>
+  </section>
+
+  <div class="board">
+    <section class="cal-col" id="sec-cal" aria-labelledby="h-cal">
+      <div class="cal-head">
+        <h2 id="h-cal">내 이용일 달력</h2>
+        <div class="cal-nav">
+          <button type="button" id="prev" class="navbtn" aria-label="이전 달"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M10 3 5 8l5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          <strong id="monthLabel" class="month"></strong>
+          <button type="button" id="next" class="navbtn" aria-label="다음 달"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m6 3 5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        </div>
+      </div>
+      <p class="month-sum" id="monthSum">공연 일정을 불러오는 중입니다.</p>
+      <ul class="legend" aria-label="달력 읽는 법">
+        <li><span class="key k-win"></span>주차 증가 시간대</li>
+        <li><span class="key k-mine"></span>내 시간</li>
+        <li><span class="key k-hit"></span>겹침</li>
+        <li><span class="key k-weak"></span>기타: 주차 영향 분석 제외(소규모·장기 공연)</li>
+      </ul>
+      <div class="cal" id="cal" role="grid" aria-labelledby="monthLabel"></div>
+      <p class="axis-note">칸 아래 막대는 6시부터 24시까지입니다.</p>
+    </section>
+
+    <section class="day-col" id="detail" aria-labelledby="h-day" aria-live="polite">
+      <h2 id="h-day"><span id="dayTitle">날짜를 고르세요</span></h2>
+      <div id="dayBody"><p class="aux">달력에서 날짜를 누르면 그날 공연과 주차 안내가 여기에 나옵니다.</p></div>
+    </section>
+  </div>
+
+  <section class="band" id="sec-sub" aria-labelledby="h-sub">
+    <h2 id="h-sub">휴대폰 캘린더에 넣기</h2>
+    <div class="sub-grid">
+      <div>
+        <h3>요일별 구독 (자동 갱신)</h3>
+        <p>그 요일의 주차 증가 공연일을 내 시간과 상관없이 모두 담습니다(일정 제목에 증가 시간대 표시). 이용 요일이 여러 날이면 요일마다 따로 구독하세요. 공연 일정이 바뀌면 캘린더가 다시 받아 옵니다. 데이터는 하루 한 번 갱신되고, 동기화 주기와 전날 알림이 뜨는지는 캘린더 앱 설정에 따라 다릅니다.</p>
+        <div class="btnrow" id="myFeeds"></div>
+        <p class="aux">전체 구독: <a href="feeds/all.ics">모든 공연일</a>, <a href="feeds/weekday.ics">평일</a>, <a href="feeds/weekend.ics">주말·공휴일</a></p>
+      </div>
+      <div>
+        <h3>내 시간과 겹치는 날만 (한 번 가져오기)</h3>
+        <p>지금 설정한 요일·시간과 겹치는 날만 골라 내 이용 시간 일정으로 만듭니다. 자동 갱신되지 않으니 일정이 바뀌면 다시 받으세요.</p>
+        <div class="btnrow"><button type="button" class="btn primary" id="dlMine">겹치는 날 .ics 받기</button></div>
+        <p class="aux" id="copied" aria-live="polite"></p>
+      </div>
+    </div>
+    <details class="howto">
+      <summary>캘린더 앱별 등록 방법</summary>
+      <dl>
+        <dt>아이폰(애플 캘린더)</dt><dd>요일 구독 버튼을 누르면 '구독' 창이 뜹니다.</dd>
+        <dt>구글 캘린더</dt><dd>앱에서는 주소 구독이 안 됩니다. PC에서 calendar.google.com을 열고 '다른 캘린더' 옆 더하기, 'URL로 추가'에 복사한 주소를 붙여 넣으면 휴대폰 앱에도 나타납니다.</dd>
+        <dt>삼성 캘린더</dt><dd>구글 계정 캘린더를 함께 보이게 하면, 위 방법으로 추가한 구독이 표시됩니다.</dd>
+      </dl>
+    </details>
+  </section>
+
+  <section class="band src" id="sec-src" aria-labelledby="h-src">
+    <h2 id="h-src">데이터와 계산 방법</h2>
+    <div id="srcBody"></div>
+  </section>
+</main>
+
+<footer class="wrap foot">
+  <p>한국체육산업개발(주) 개방 공공데이터(공공데이터포털·문화공공데이터광장)와 올림픽공원 누리집 공연 일정을 활용했습니다. 공모전 출품용 시범 서비스이며 기관의 공식 서비스가 아닙니다. 당일 실시간 주차는 기관의 <a href="https://www.ksponco.or.kr/online/main/parking.do" rel="noopener">주차장 예상 이용률 서비스</a>에서 확인하세요. 데이터 갱신: <span id="builtAt" class="num"></span></p>
+</footer>
+
+<script src="app.js" defer></script>
+</body>
+</html>
