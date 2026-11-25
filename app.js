@@ -11,7 +11,7 @@
     { id: "woori", name: "우리금융아트홀 주변", lot: ["P7"] },
     { id: "arena", name: "티켓링크 라이브 아레나 주변", lot: ["P6"] },
     { id: "kart", name: "K-아트홀 주변", lot: ["P1A", "P1B"] },
-    { id: "walk", name: "산책·피크닉 (공원 전체)", lot: [] }
+    { id: "walk", name: "공원 전체 (특정 시설 없음)", lot: [] }
   ];
   var DOW = ["일", "월", "화", "수", "목", "금", "토"];
   var SHORT = { KSPO: "KSPO DOME", ARENA: "핸드볼경기장", LAWN: "88잔디마당", HALL: "올림픽홀", SMALL: "소규모·장기 공연" };

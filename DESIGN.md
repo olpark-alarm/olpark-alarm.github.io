@@ -1,6 +1,6 @@
 # DESIGN.md · 올팍 공연일 알림
 
-Reading this as: 공공 안내 도구(Operate) for 올림픽공원 정기 이용자(수영·테니스·운동·산책, 연령 다양, 출발 전 휴대폰으로 확인), in a 공원 안내판·시간표 language, dial ENERGY 1 / RHYTHM 2 / MOTION 1.
+Reading this as: 공공 안내 도구(Operate) for 올림픽공원 정기 이용자(수영장·스포츠센터·테니스장 등, 연령 다양, 출발 전 휴대폰으로 확인), in a 공원 안내판·시간표 language, dial ENERGY 1 / RHYTHM 2 / MOTION 1.
 
 ## 결정과 이유 (한 줄씩)
 
